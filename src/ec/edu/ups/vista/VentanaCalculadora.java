@@ -433,13 +433,25 @@ public class VentanaCalculadora extends javax.swing.JFrame {
 
     private void BtnInvertirordenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnInvertirordenActionPerformed
         // TODO add your handling code here:
-     
+        String memoria;
+        Double numero;
+        memoria=txtResultado.getText();
+        if(memoria.length()>0){
+            numero=1/(Double.parseDouble(memoria));
+            txtResultado.setText(numero.toString());
+        }
         
     }//GEN-LAST:event_BtnInvertirordenActionPerformed
 
     private void BtnSignoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSignoActionPerformed
         // TODO add your handling code here:
-       
+         String memoria;
+        Double numero;
+        memoria=txtResultado.getText();
+        if(memoria.length()>0){
+            numero=(-1)*Double.parseDouble(memoria);
+            txtResultado.setText(numero.toString());
+        }
     }//GEN-LAST:event_BtnSignoActionPerformed
 
     private void BtnRestaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnRestaActionPerformed
@@ -497,11 +509,11 @@ public class VentanaCalculadora extends javax.swing.JFrame {
     }//GEN-LAST:event_BtnIgualActionPerformed
 
     private void BtnPorcentajeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnPorcentajeActionPerformed
-       
+      
     }//GEN-LAST:event_BtnPorcentajeActionPerformed
 
     private void BtnraizActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnraizActionPerformed
-       
+      
     }//GEN-LAST:event_BtnraizActionPerformed
  public static String calculadora(String num1, String num2 , String signo){
        Double result=0.0;
