@@ -509,11 +509,21 @@ public class VentanaCalculadora extends javax.swing.JFrame {
     }//GEN-LAST:event_BtnIgualActionPerformed
 
     private void BtnPorcentajeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnPorcentajeActionPerformed
-      
+        if(!txtResultado.getText().equals("")){
+            num1=txtResultado.getText();
+            signo="%";
+            txtResultado.setText("");
+            
+        }
     }//GEN-LAST:event_BtnPorcentajeActionPerformed
 
     private void BtnraizActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnraizActionPerformed
-      
+       if(!txtResultado.getText().equals("")){
+           double res;
+            res = Math.sqrt(Double.parseDouble(txtResultado.getText()));
+            txtResultado.setText(String.valueOf(res));
+            
+        }
     }//GEN-LAST:event_BtnraizActionPerformed
  public static String calculadora(String num1, String num2 , String signo){
        Double result=0.0;
