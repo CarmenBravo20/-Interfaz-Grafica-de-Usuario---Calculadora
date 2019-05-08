@@ -416,11 +416,15 @@ public class VentanaCalculadora extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_BtnPuntoActionPerformed
 
+    /**
+     * Borrar caracter en caracter
+     * @param evt 
+     */
     private void borrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_borrarActionPerformed
         // TODO add your handling code here:
-        String memoria;
+        String memoria;//declaracion de la variable
         memoria=txtResultado.getText();
-        if(memoria.length()>0){
+        if(memoria.length()>0){// para ello es necesario comparar primero si la memoria no esta vacia
           memoria =  memoria.substring(0,memoria.length()-1);
           txtResultado.setText(memoria);
         }
@@ -433,6 +437,8 @@ public class VentanaCalculadora extends javax.swing.JFrame {
 
     private void BtnInvertirordenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnInvertirordenActionPerformed
         // TODO add your handling code here:
+        
+        //Declaracion de las variables
         String memoria;
         Double numero;
         memoria=txtResultado.getText();
@@ -445,12 +451,13 @@ public class VentanaCalculadora extends javax.swing.JFrame {
 
     private void BtnSignoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSignoActionPerformed
         // TODO add your handling code here:
-         String memoria;
+        // declaracion de las variables
+        String memoria;
         Double numero;
         memoria=txtResultado.getText();
-        if(memoria.length()>0){
-            numero=(-1)*Double.parseDouble(memoria);
-            txtResultado.setText(numero.toString());
+        if(memoria.length()>0){//compara si la memoria esta vacia
+            numero=(-1)*Double.parseDouble(memoria);// es para convertir en string
+            txtResultado.setText(numero.toString());//mostrando el valor de numero pero en este caso ya convertido en string
         }
     }//GEN-LAST:event_BtnSignoActionPerformed
 
@@ -554,6 +561,10 @@ public class VentanaCalculadora extends javax.swing.JFrame {
     }
   
 
+ /*
+ * Aqui lo que hace es recorrer tdo lo que esta en memoria es decir caracter por caracter
+ * hasta que encuentre un punto y asi ya no ponerlo 
+ */
  
     public static boolean punto(String memoria){
         boolean result;
