@@ -64,7 +64,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(204, 255, 204));
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Calculadora", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION));
 
-        jButton4.setBackground(new java.awt.Color(0, 255, 204));
+        jButton4.setBackground(new java.awt.Color(255, 204, 204));
         jButton4.setText("0");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -72,7 +72,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
             }
         });
 
-        Suma.setBackground(new java.awt.Color(0, 255, 204));
+        Suma.setBackground(new java.awt.Color(255, 204, 204));
         Suma.setText("+");
         Suma.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -80,7 +80,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
             }
         });
 
-        BtnSigno.setBackground(new java.awt.Color(0, 255, 204));
+        BtnSigno.setBackground(new java.awt.Color(255, 204, 204));
         BtnSigno.setText("+/-");
         BtnSigno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -88,7 +88,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
             }
         });
 
-        BtnResta.setBackground(new java.awt.Color(0, 255, 204));
+        BtnResta.setBackground(new java.awt.Color(255, 204, 204));
         BtnResta.setText("-");
         BtnResta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -96,7 +96,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
             }
         });
 
-        jButton6.setBackground(new java.awt.Color(0, 255, 204));
+        jButton6.setBackground(new java.awt.Color(255, 204, 204));
         jButton6.setText("2");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -104,7 +104,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
             }
         });
 
-        BtnIgual.setBackground(new java.awt.Color(0, 255, 204));
+        BtnIgual.setBackground(new java.awt.Color(255, 204, 204));
         BtnIgual.setText("=");
         BtnIgual.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -112,7 +112,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
             }
         });
 
-        jButton7.setBackground(new java.awt.Color(0, 255, 204));
+        jButton7.setBackground(new java.awt.Color(255, 204, 204));
         jButton7.setText("8");
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -120,7 +120,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
             }
         });
 
-        BtnInvertirorden.setBackground(new java.awt.Color(0, 255, 204));
+        BtnInvertirorden.setBackground(new java.awt.Color(255, 204, 204));
         BtnInvertirorden.setText("1/x");
         BtnInvertirorden.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -128,7 +128,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
             }
         });
 
-        jButton8.setBackground(new java.awt.Color(0, 255, 204));
+        jButton8.setBackground(new java.awt.Color(255, 204, 204));
         jButton8.setText("5");
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -136,7 +136,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
             }
         });
 
-        BtnBorrar.setBackground(new java.awt.Color(0, 255, 204));
+        BtnBorrar.setBackground(new java.awt.Color(255, 204, 204));
         BtnBorrar.setText("CE");
         BtnBorrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -144,7 +144,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
             }
         });
 
-        BtnPunto.setBackground(new java.awt.Color(0, 255, 204));
+        BtnPunto.setBackground(new java.awt.Color(255, 204, 204));
         BtnPunto.setText(".");
         BtnPunto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -152,7 +152,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
             }
         });
 
-        borrar.setBackground(new java.awt.Color(0, 255, 204));
+        borrar.setBackground(new java.awt.Color(255, 204, 204));
         borrar.setText("C");
         borrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -160,7 +160,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
             }
         });
 
-        jButton10.setBackground(new java.awt.Color(0, 255, 204));
+        jButton10.setBackground(new java.awt.Color(255, 204, 204));
         jButton10.setText("3");
         jButton10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -170,7 +170,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
 
         txtResultado.setBackground(new java.awt.Color(204, 255, 204));
 
-        jButton11.setBackground(new java.awt.Color(0, 255, 204));
+        jButton11.setBackground(new java.awt.Color(255, 204, 204));
         jButton11.setText("9");
         jButton11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -178,7 +178,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setBackground(new java.awt.Color(0, 255, 204));
+        jButton1.setBackground(new java.awt.Color(255, 204, 204));
         jButton1.setText("1");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -186,7 +186,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
             }
         });
 
-        jButton12.setBackground(new java.awt.Color(0, 255, 204));
+        jButton12.setBackground(new java.awt.Color(255, 204, 204));
         jButton12.setText("6");
         jButton12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -194,7 +194,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setBackground(new java.awt.Color(0, 255, 204));
+        jButton2.setBackground(new java.awt.Color(255, 204, 204));
         jButton2.setText("7");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -202,7 +202,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
             }
         });
 
-        BtnDividir.setBackground(new java.awt.Color(0, 255, 204));
+        BtnDividir.setBackground(new java.awt.Color(255, 204, 204));
         BtnDividir.setText("/");
         BtnDividir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -210,7 +210,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
             }
         });
 
-        jButton3.setBackground(new java.awt.Color(0, 255, 204));
+        jButton3.setBackground(new java.awt.Color(255, 204, 204));
         jButton3.setText("4");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -218,7 +218,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
             }
         });
 
-        BtnMultiplicacion.setBackground(new java.awt.Color(0, 255, 204));
+        BtnMultiplicacion.setBackground(new java.awt.Color(255, 204, 204));
         BtnMultiplicacion.setText("*");
         BtnMultiplicacion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -226,7 +226,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
             }
         });
 
-        BtnPorcentaje.setBackground(new java.awt.Color(0, 255, 204));
+        BtnPorcentaje.setBackground(new java.awt.Color(255, 204, 204));
         BtnPorcentaje.setText("%");
         BtnPorcentaje.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -234,7 +234,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
             }
         });
 
-        Btnraiz.setBackground(new java.awt.Color(0, 255, 204));
+        Btnraiz.setBackground(new java.awt.Color(255, 204, 204));
         Btnraiz.setText("√");
         Btnraiz.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
