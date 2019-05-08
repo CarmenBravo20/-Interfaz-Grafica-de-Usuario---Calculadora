@@ -403,7 +403,17 @@ public class VentanaCalculadora extends javax.swing.JFrame {
 
     private void BtnPuntoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnPuntoActionPerformed
         // TODO add your handling code here:
-    
+        String memoria;
+        memoria= txtResultado.getText();
+        
+        if (memoria.length()<=0){
+            txtResultado.setText("0.") ;
+        }else{
+            if(!punto(txtResultado.getText())){
+                txtResultado.setText(txtResultado.getText()+".");
+            }
+            
+        }
     }//GEN-LAST:event_BtnPuntoActionPerformed
 
     private void borrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_borrarActionPerformed
@@ -423,18 +433,13 @@ public class VentanaCalculadora extends javax.swing.JFrame {
 
     private void BtnInvertirordenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnInvertirordenActionPerformed
         // TODO add your handling code here:
-   
+     
+        
     }//GEN-LAST:event_BtnInvertirordenActionPerformed
 
     private void BtnSignoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSignoActionPerformed
         // TODO add your handling code here:
-         String memoria;
-        Double numero;
-        memoria=txtResultado.getText();
-        if(memoria.length()>0){
-            numero=(-1)*Double.parseDouble(memoria);
-            txtResultado.setText(numero.toString());
-        }
+       
     }//GEN-LAST:event_BtnSignoActionPerformed
 
     private void BtnRestaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnRestaActionPerformed
@@ -492,11 +497,11 @@ public class VentanaCalculadora extends javax.swing.JFrame {
     }//GEN-LAST:event_BtnIgualActionPerformed
 
     private void BtnPorcentajeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnPorcentajeActionPerformed
-      
+       
     }//GEN-LAST:event_BtnPorcentajeActionPerformed
 
     private void BtnraizActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnraizActionPerformed
-    
+       
     }//GEN-LAST:event_BtnraizActionPerformed
  public static String calculadora(String num1, String num2 , String signo){
        Double result=0.0;
@@ -528,7 +533,18 @@ public class VentanaCalculadora extends javax.swing.JFrame {
 
  
     public static boolean punto(String memoria){
-    
+        boolean result;
+        result=false;
+        
+        for (int i=0 ;i<memoria.length();i++){
+            if(memoria.substring(i,i+1).equals(".")){
+              result=true;
+              break;
+                
+            }
+            
+        }
+        return result;
     }
     /**
      * @param args the command line arguments
