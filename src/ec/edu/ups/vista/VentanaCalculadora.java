@@ -473,6 +473,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
             txtResultado.setText("");
             
         }
+        
     }//GEN-LAST:event_SumaActionPerformed
 
     private void BtnMultiplicacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnMultiplicacionActionPerformed
