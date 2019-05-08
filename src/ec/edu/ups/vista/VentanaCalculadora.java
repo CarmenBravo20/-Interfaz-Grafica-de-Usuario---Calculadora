@@ -353,77 +353,62 @@ public class VentanaCalculadora extends javax.swing.JFrame {
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
-        //El set es el metodo que me va a permitir escribir en la pantalla
+        txtResultado.setText(txtResultado.getText()+"0");//El set es el metodo que me va a permitir escribir en la pantalla
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-       //El set me permite escribir en la pantalla
+        txtResultado.setText(txtResultado.getText()+"1");//El set me permite escribir en la pantalla
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
-        //El set es el metodo que me va a permitir escribir en la pantalla
+        txtResultado.setText(txtResultado.getText()+"2");//El set es el metodo que me va a permitir escribir en la pantalla
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
         // TODO add your handling code here
-        //El set es el metodo que me va a permitir escribir en la pantalla
+        txtResultado.setText(txtResultado.getText()+"3");//El set es el metodo que me va a permitir escribir en la pantalla
     }//GEN-LAST:event_jButton10ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-       //El set es el metodo que me va a permitir escribir en la pantalla
+        txtResultado.setText(txtResultado.getText()+"4");//El set es el metodo que me va a permitir escribir en la pantalla
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         // TODO add your handling code here:
-      
+        txtResultado.setText(txtResultado.getText()+"5");//El set es el metodo que me va a permitir escribir en la pantalla
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
         // TODO add your handling code here:
-        
+        txtResultado.setText(txtResultado.getText()+"6");//El set es el metodo que me va a permitir escribir en la pantalla
     }//GEN-LAST:event_jButton12ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        
+        txtResultado.setText(txtResultado.getText()+"7");//El set es el metodo que me va a permitir escribir en la pantalla
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         // TODO add your handling code here:
-      
+        txtResultado.setText(txtResultado.getText()+"8");//El set es el metodo que me va a permitir escribir en la pantalla
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
         // TODO add your handling code here:
-        //El set es el metodo que me va a permitir escribir en la pantalla
+        txtResultado.setText(txtResultado.getText()+"9");//El set es el metodo que me va a permitir escribir en la pantalla
     }//GEN-LAST:event_jButton11ActionPerformed
 
     private void BtnPuntoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnPuntoActionPerformed
         // TODO add your handling code here:
-        String memoria;
-        memoria= txtResultado.getText();
-        
-        if (memoria.length()<=0){
-            txtResultado.setText("0.") ;
-        }else{
-            if(!punto(txtResultado.getText())){
-                txtResultado.setText(txtResultado.getText()+".");
-            }
-            
-        }
+       
     }//GEN-LAST:event_BtnPuntoActionPerformed
 
     private void borrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_borrarActionPerformed
         // TODO add your handling code here:
-        String memoria;
-        memoria=txtResultado.getText();
-        if(memoria.length()>0){
-          memoria =  memoria.substring(0,memoria.length()-1);
-          txtResultado.setText(memoria);
-        }
+      
     }//GEN-LAST:event_borrarActionPerformed
 
     private void BtnBorrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnBorrarActionPerformed
@@ -433,78 +418,40 @@ public class VentanaCalculadora extends javax.swing.JFrame {
 
     private void BtnInvertirordenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnInvertirordenActionPerformed
         // TODO add your handling code here:
-        String memoria;
-        Double numero;
-        memoria=txtResultado.getText();
-        if(memoria.length()>0){
-            numero=1/(Double.parseDouble(memoria));
-            txtResultado.setText(numero.toString());
-        }
+       
         
     }//GEN-LAST:event_BtnInvertirordenActionPerformed
 
     private void BtnSignoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSignoActionPerformed
         // TODO add your handling code here:
-         String memoria;
-        Double numero;
-        memoria=txtResultado.getText();
-        if(memoria.length()>0){
-            numero=(-1)*Double.parseDouble(memoria);
-            txtResultado.setText(numero.toString());
-        }
+       
     }//GEN-LAST:event_BtnSignoActionPerformed
 
     private void BtnRestaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnRestaActionPerformed
         // TODO add your handling code here:
-        if(!txtResultado.getText().equals("")){
-            num1=txtResultado.getText();
-            signo="-";
-            txtResultado.setText("");
-            
-        }
+        
     }//GEN-LAST:event_BtnRestaActionPerformed
 
     private void SumaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SumaActionPerformed
         // TODO add your handling code here:
         
-        if(!txtResultado.getText().equals("")){
-            num1=txtResultado.getText();
-            signo="+";
-            txtResultado.setText("");
-            
-        }
+       
     }//GEN-LAST:event_SumaActionPerformed
 
     private void BtnMultiplicacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnMultiplicacionActionPerformed
         // TODO add your handling code here:
-        if(!txtResultado.getText().equals("")){
-            num1=txtResultado.getText();
-            signo="*";
-            txtResultado.setText("");
-            
-        }
+       
     }//GEN-LAST:event_BtnMultiplicacionActionPerformed
 
      
     private void BtnDividirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnDividirActionPerformed
         // TODO add your handling code here:
-        if(!txtResultado.getText().equals("")){
-            num1=txtResultado.getText();
-            signo="/";
-            txtResultado.setText("");
-            
-        }
+        
     }//GEN-LAST:event_BtnDividirActionPerformed
 
     private void BtnIgualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnIgualActionPerformed
         // TODO add your handling code here:
-        String result;
-        num2=txtResultado.getText();
-        if(!num2.equals("")){
-            result=calculadora(num1,num2,signo);
-            txtResultado.setText(result);
-            
-        }
+        
                 
     }//GEN-LAST:event_BtnIgualActionPerformed
 
