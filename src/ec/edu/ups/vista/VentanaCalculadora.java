@@ -402,8 +402,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton11ActionPerformed
 
     private void BtnPuntoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnPuntoActionPerformed
-        // TODO add your handling code here:
-       
+      
     }//GEN-LAST:event_BtnPuntoActionPerformed
 
     private void borrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_borrarActionPerformed
@@ -418,59 +417,69 @@ public class VentanaCalculadora extends javax.swing.JFrame {
 
     private void BtnInvertirordenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnInvertirordenActionPerformed
         // TODO add your handling code here:
-       
+      
         
     }//GEN-LAST:event_BtnInvertirordenActionPerformed
 
     private void BtnSignoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSignoActionPerformed
         // TODO add your handling code here:
-       
+      
     }//GEN-LAST:event_BtnSignoActionPerformed
 
     private void BtnRestaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnRestaActionPerformed
         // TODO add your handling code here:
-        
+        if(!txtResultado.getText().equals("")){
+            num1=txtResultado.getText();
+            signo="-";
+            txtResultado.setText("");
+            
+        }
     }//GEN-LAST:event_BtnRestaActionPerformed
 
     private void SumaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SumaActionPerformed
         // TODO add your handling code here:
         
-       
+        if(!txtResultado.getText().equals("")){
+            num1=txtResultado.getText();
+            signo="+";
+            txtResultado.setText("");
+            
+        }
     }//GEN-LAST:event_SumaActionPerformed
 
     private void BtnMultiplicacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnMultiplicacionActionPerformed
         // TODO add your handling code here:
-       
+        if(!txtResultado.getText().equals("")){
+            num1=txtResultado.getText();
+            signo="*";
+            txtResultado.setText("");
+            
+        }
     }//GEN-LAST:event_BtnMultiplicacionActionPerformed
 
      
     private void BtnDividirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnDividirActionPerformed
         // TODO add your handling code here:
-        
+        if(!txtResultado.getText().equals("")){
+            num1=txtResultado.getText();
+            signo="/";
+            txtResultado.setText("");
+            
+        }
     }//GEN-LAST:event_BtnDividirActionPerformed
 
     private void BtnIgualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnIgualActionPerformed
         // TODO add your handling code here:
-        
+     
                 
     }//GEN-LAST:event_BtnIgualActionPerformed
 
     private void BtnPorcentajeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnPorcentajeActionPerformed
-        if(!txtResultado.getText().equals("")){
-            num1=txtResultado.getText();
-            signo="%";
-            txtResultado.setText("");
-            
-        }
+     
     }//GEN-LAST:event_BtnPorcentajeActionPerformed
 
     private void BtnraizActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnraizActionPerformed
-       if(!txtResultado.getText().equals("")){
-           double res;
-            res = Math.sqrt(Double.parseDouble(txtResultado.getText()));
-            txtResultado.setText(String.valueOf(res));
-            
-        }
+     
     }//GEN-LAST:event_BtnraizActionPerformed
  public static String calculadora(String num1, String num2 , String signo){
        Double result=0.0;
@@ -502,18 +511,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
 
  
     public static boolean punto(String memoria){
-        boolean result;
-        result=false;
-        
-        for (int i=0 ;i<memoria.length();i++){
-            if(memoria.substring(i,i+1).equals(".")){
-              result=true;
-              break;
-                
-            }
-            
-        }
-        return result;
+   
     }
     /**
      * @param args the command line arguments
