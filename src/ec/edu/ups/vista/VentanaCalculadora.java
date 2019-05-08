@@ -570,7 +570,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
         boolean result;
         result=false;
         
-        for (int i=0 ;i<memoria.length();i++){
+        for (int i=0 ;i<memoria.length();i++){//compara si la memora esta vacia
             if(memoria.substring(i,i+1).equals(".")){
               result=true;
               break;
